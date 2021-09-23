@@ -1,0 +1,53 @@
+<!--Pseudo-class Selector-->
+<p>>>Pseudo-class Selector</p>
+/* rule akan diterapkan pada sebuah tautan yang belum pernah dikunjungi */
+a:link {
+   color: red;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan yang sudah pernah dikunjungi */
+a:visited {
+   color: green;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan ketika diarahkan dengan kursor */
+a:hover {
+   color: pink;
+}
+ 
+/* rule akan diterapkan pada sebuah tautan ketika ditekan */
+a:active {
+   color:orange;
+}
+
+<!--Pseudo-elemen Selector-->
+<p>Pseudo-elemen Selector</p>
+blockquote::before,
+blockquote::after {
+   content: '"';
+   font-size: 24px;
+   font-style: italic;
+   font-weight: bol
+}
+<blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eius error explicabo ipsum molestiae necessitatibus nesciunt possimus reprehenderit sed voluptates. Aliquam aspernatur autem est nobis officia praesentium quas recusandae rem.</blockquote>
+
+
+<!doctype html>
+<html lang="en">
+<head>
+   <title>Judul Dokumen</title>
+   <style>
+       /* Rule styling akan diterapkan pada karakter pertama disebuah paragraf */
+       p::first-letter {
+           font-size: 32px;
+           font-weight: bold;
+           color: saddlebrown;
+       }
+   </style>
+</head>
+<body>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto deserunt, dicta laudantium quae quam sequi
+   soluta vitae! A, architecto beatae, consequuntur et eveniet fuga laudantium molestias praesentium temporibus, unde
+   velit.</p>
+</body>
+</html>
